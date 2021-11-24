@@ -2,7 +2,6 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-import random
 
 
 def calculate(first_value, second_value, third_value):
@@ -19,38 +18,9 @@ def calculate(first_value, second_value, third_value):
 
 
 def main():
-    while True:
-        first_value = ""
-        first_value_is_int = isinstance(first_value, int)
-        try:
-            first_value = int(input("Choose first value : "))
-            first_value_is_int = isinstance(first_value, int)
-        except ValueError:
-            print("Give number")
-        if first_value_is_int:
-            break
-
-    while True:
-        second_value = ""
-        second_value_is_int = isinstance(second_value, int)
-        try:
-            second_value = int(input("Choose second value : "))
-            second_value_is_int = isinstance(second_value, int)
-        except ValueError:
-            print("Give number")
-        if second_value_is_int:
-            break
-
-    while True:
-        third_value = ""
-        third_value_is_int = isinstance(third_value, int)
-        try:
-            third_value = int(input("Choose third value : "))
-            third_value_is_int = isinstance(third_value, int)
-        except ValueError:
-            print("Give number")
-        if third_value_is_int:
-            break
+    first_value = int(input("Choose first value : "))
+    second_value = int(input("Choose second value : "))
+    third_value = int(input("Choose third value : "))
 
     print(calculate(first_value, second_value, third_value))
 
